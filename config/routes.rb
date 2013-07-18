@@ -2,7 +2,7 @@ Startuphack::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
-  root :to => 'subscribers#index'
+  root :to => 'lessons#index'
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'

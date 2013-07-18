@@ -1,0 +1,10 @@
+<h2>Here go all the lessons go</h2>
+
+ <% @lesson.each do |lesson| %>
+	<p>
+	<%= lesson.name %>
+	<%= lesson.week %>
+	<%= lesson.main_headline %>
+	<%= lesson.weekly_tagline %>
+	</p>
+<% end %>
