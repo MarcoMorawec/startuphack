@@ -21,6 +21,9 @@ end
 
 gem 'jquery-rails'
 
+#better forms
+gem 'simple_form'
+
 
 
 # To use ActiveModel has_secure_password

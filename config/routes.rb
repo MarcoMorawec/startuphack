@@ -2,6 +2,8 @@ Startuphack::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
+  resources :lessons
+
   root :to => 'lessons#index'
 
   # Sample of regular route:
