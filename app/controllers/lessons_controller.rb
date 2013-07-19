@@ -9,7 +9,7 @@ class LessonsController < ApplicationController
 	end
 
 	def new
-		@lesson = Lesson.find(params[:lesson])
+		@lesson = Lesson.new(params[:lesson])
 	end
 
 	def create
