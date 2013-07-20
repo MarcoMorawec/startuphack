@@ -1,0 +1,25 @@
+<h2>Main landing page</h2>
+
+
+<h4>An easy to follow Startup course for people who do amazing things</h4>
+
+<%= bootstrap_flash %>
+<div class="well">
+	<p> Sign up</p>
+
+	<%= simple_form_for :subscriber, :url => {:action => 'create'}, :method => 'post', :html => {:class => 'form-horizontal' } do |f| %>
+
+	<%= f.error_notification %>
+  	<%= f.input :email, label: 'Your email' %>	
+
+  	<%= f.button :submit, class: "btn btn-primary", value: "Get my Lesson" %>
+  	<% end %>	
+
+ 
+
+
+</div>
+
+<h5>Meet your instructors</h5>
+
+<p>Marco, Sara, Emily, Isaac</p>
