@@ -25,9 +25,10 @@ gem 'jquery-rails'
 #better forms
 gem 'simple_form'
 
-gem "therubyracer"
-gem "less-rails" 
-gem "twitter-bootstrap-rails"
+gem 'therubyracer'
+gem 'less-rails'
+gem 'twitter-bootstrap-rails'
+gem 'devise'
 
 
 
