@@ -1,14 +1,15 @@
 <h2>Each weekly lesson will be here</h2>
 
- 
+ 	<div class="span2 pull-right">
 	<p>
 	<%= @lesson.name %>
 	</p>
+</div>
 	<p>
 		Week: <%= @lesson.week %>
 	</p>
 	
-	<%= @lesson.main_headline %>
+	<h2><%= @lesson.main_headline %></h2>
 	<%= @lesson.weekly_tagline %>
 
 	<h2><%= link_to(@lesson.first_ressource_headline, @lesson.first_ressource_headline_link) %></h2>
