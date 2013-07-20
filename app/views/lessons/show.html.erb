@@ -7,6 +7,11 @@
 	<p>
 		Week: <%= @lesson.week %>
 	</p>
+	
 	<%= @lesson.main_headline %>
 	<%= @lesson.weekly_tagline %>
+
+	<h2><%= link_to(@lesson.first_ressource_headline, @lesson.first_ressource_headline_link) %></h2>
+	<h4><%= @lesson.first_ressource_text%></h4>
 	</p>
+

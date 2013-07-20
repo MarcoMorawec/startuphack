@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
 
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -23,6 +24,10 @@ gem 'jquery-rails'
 
 #better forms
 gem 'simple_form'
+
+gem "therubyracer"
+gem "less-rails" 
+gem "twitter-bootstrap-rails"
 
 
 

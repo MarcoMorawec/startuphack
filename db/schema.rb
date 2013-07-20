@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130718200252) do
+ActiveRecord::Schema.define(:version => 20130720124650) do
 
   create_table "lessons", :force => true do |t|
     t.string   "name"
@@ -30,8 +30,13 @@ ActiveRecord::Schema.define(:version => 20130718200252) do
     t.text     "fifth_ressource_text"
     t.string   "curator_name"
     t.text     "curator_description"
-    t.datetime "created_at",                :null => false
-    t.datetime "updated_at",                :null => false
+    t.datetime "created_at",                     :null => false
+    t.datetime "updated_at",                     :null => false
+    t.string   "first_ressource_headline_link"
+    t.string   "second_ressource_headline_link"
+    t.string   "third_ressource_headline_link"
+    t.string   "fourth_ressource_headline_link"
+    t.string   "fifth_ressource_headline_link"
   end
 
 end
