@@ -2,6 +2,7 @@ class LessonsController < ApplicationController
 
 
 	def index
+		#sort descending by week number
 		@lesson = Lesson.all
 	end
 

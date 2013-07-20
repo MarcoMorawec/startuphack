@@ -4,7 +4,7 @@ Startuphack::Application.routes.draw do
 
   resources :lessons
 
-  root :to => 'lessons#index'
+  root :to => 'intro#index'
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
