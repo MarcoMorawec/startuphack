@@ -1,10 +1,7 @@
-<h2>Main landing page</h2>
-
-
-<h4>An easy to follow Startup course for people who do amazing things</h4>
+<h2>An easy to follow Startup course for people who do amazing things</h2>
 
 <%= bootstrap_flash %>
-<div class="well">
+<div class="well span3">
 	<p> Sign up</p>
 
 	<%= simple_form_for :subscriber, :url => {:action => 'create'}, :method => 'post', :html => {:class => 'form-horizontal' } do |f| %>
@@ -20,6 +17,10 @@
 
 </div>
 
+<div class="span10">
+
 <h5>Meet your instructors</h5>
 
 <p>Marco, Sara, Emily, Isaac</p>
+
+</div>

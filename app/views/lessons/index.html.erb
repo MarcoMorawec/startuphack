@@ -1,5 +1,7 @@
 <h2>Lesson overview goes here</h2>
 
+<p>Add a popover for new subscribers here<p>
+
 <% @lesson.each do |lesson| %>
 	<h4>Week: <%= lesson.week %>
 		<%= link_to(lesson.weekly_tagline, {:action => 'show', :id => lesson.id}) %>
