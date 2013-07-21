@@ -7,10 +7,11 @@
 	<%= simple_form_for :subscriber, :url => {:action => 'create'}, :method => 'post', :html => {:class => 'form-horizontal' } do |f| %>
 
 	<%= f.error_notification %>
-  	<%= f.input :email, label: 'Your email' %>	
+  	<%= f.input :email, label: 'Your email' %>
 
   	<%= f.button :submit, class: "btn btn-primary", value: "Get my Lesson" %>
   	<% end %>	
+
 
  
 
