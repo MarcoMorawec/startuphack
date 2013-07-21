@@ -6,6 +6,7 @@
 
      
 	<!-- Modal -->
+	<% if user_signed_in?  %>
 		<div id="lesson-social" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		    <div class="modal-header">
 			    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
@@ -18,7 +19,7 @@
 			    <strong>Tweet This</strong>
 		    </div>
 		</div>
-
+	<% end %>
 
 <h2>Lesson overview goes here</h2>
 
