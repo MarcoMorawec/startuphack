@@ -7,7 +7,12 @@ Startuphack::Application.routes.draw do
   resources :lessons
   resources :subscriber
 
+
+
   root :to => 'subscriber#index'
+
+    #devise override after sign-up
+  #after_sign_in_path_for :to => 'lessons#index'
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'

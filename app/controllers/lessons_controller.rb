@@ -1,5 +1,6 @@
 class LessonsController < ApplicationController
 
+before_filter :authenticate_user!, :except => [:index]
 
 	def index
 		#sort descending by week number
