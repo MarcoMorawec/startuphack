@@ -5,7 +5,8 @@ class RegistrationsController < Devise::RegistrationsController
     '/lessons'
   end
 
-    def after_sign_in_path_for(resource)
+#need this to work as well
+  def after_sign_in_path_for(resource)
     '/lessons'
   end
 
