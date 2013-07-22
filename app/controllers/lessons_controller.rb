@@ -3,6 +3,7 @@ class LessonsController < ApplicationController
 before_filter :authenticate_user!, :except => [:index]
 
 	def index
+		@user_session = current_user.sign_in_count
 		#sort descending by week number
 		@lesson = Lesson.all
 	end
