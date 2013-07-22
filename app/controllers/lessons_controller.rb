@@ -3,7 +3,7 @@ class LessonsController < ApplicationController
 before_filter :authenticate_user!, :except => [:index]
 
 	def index
-		@user_session = current_user.sign_in_count
+		@admin = if user_signed_in? then current_user.admin else nil end
 		#sort descending by week number
 		@lesson = Lesson.order("week ASC")
 	end
@@ -31,9 +31,10 @@ before_filter :authenticate_user!, :except => [:index]
 	end
 
 	def update
-		@lesson = Lesson.update_attributes(params[:lesson])
+		@lesson = Lesson.find(params[:id])
+		@lesson = @lesson.update_attributes(params[:lesson])
 		if @lesson.save
-			flash[:notice] = "Alright buddy, your Lesson is updated!"
+			flash[:notice] = "Alright billy, your Lesson is updated!"
 			redirect_to @lesson
 		else
 			render 'edit'

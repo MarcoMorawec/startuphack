@@ -14,7 +14,7 @@ class SubscriberController < ApplicationController
 		@subscriber = Subscriber.create(params[:subscriber])
 		if @subscriber.save
 			flash[:notice] = "You're subscribed - start learning now!"
-			redirect_to new_user_registration_path
+			redirect_to new_user_registration_path( :email => params[:subscriber][:email])
 		else
 			render root_path
 		end
