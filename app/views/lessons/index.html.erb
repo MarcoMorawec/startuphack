@@ -27,7 +27,7 @@
 	<h4>Week: <%= lesson.week %>
 		<%= link_to(lesson.weekly_tagline, {:action => 'show', :id => lesson.id}) %>
 	</h4>
-	<% if @user.admin == true %>
+	<% if current_user.admin == true %>
 		<%= link_to('Edit Lesson', {:action => 'edit', :id => lesson.id }, :class => 'btn btn-mini') %>
 		<%= link_to('Delete Lesson', {:action => 'destroy', :id => lesson.id }, :method => 'delete', :confirm => 'Are you sure you want to delete this lesson?', :class => 'btn btn-mini btn-danger') %>
 	<% end %>
